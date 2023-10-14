@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+.imag {
+    width: 400px;
+}
+
+.imag:hover {
+    width: 420px;
+    filter: opacity(.5);
+    border-radius: 2%;
+    box-shadow: 0px 5px 0px 5px black;
+}

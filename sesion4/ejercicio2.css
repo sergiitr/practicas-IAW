@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+}
+
+legend {
+    text-align: left;
+    background-color: lightcoral;
+    font-weight: bold;
+    border-radius: 2px 2px black;
+}
+
+form {
+    background-color: rgba(238,238,238,255);
+}
+#general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    height: auto;
+}
+#general2 {
+    display: grid;
+    margin-top: 15%;
+    justify-content: space-around;
+    justify-items: center;
+}
+form {
+    width: 35%;
+}
+
+p {
+    font-size: 20px;
+}
+
+b {
+    color: blue;
+}
+
+.button {
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+#boton {
+    text-align: center;
+}
