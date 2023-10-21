@@ -1,0 +1,42 @@
+body {
+    background-color: greenyellow;
+}
+#fotoynombre {
+    display: inline-flex;
+    height: fit-content;
+    background-color: yellow;
+    width: 100%;
+}
+#foto {
+    display: grid;
+    float: left;
+    background-color: red;
+    width: 20%;
+    justify-items: center;
+}
+#nombreytitulacion {
+    display: flow;
+    width: 80%;
+    float: right;
+    background-color: lightblue;
+}
+img {
+    width: 40%;
+}
+#grupal {
+    display: flex;
+    background-color: hotpink;
+}
+#izq {
+    width: 20%;
+    background-color: yellow;
+}
+
+#der {
+    width: 80%;
+    background-color: gray;
+}
+
+li {
+    margin-left: 2%;
+}
