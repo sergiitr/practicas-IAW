@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+body {
+    background-color: lightgreen;
+    text-align: center;
+    font-family: Courier;
+}
+
+h1 {
+    color: blue;
+    font-family: 'Dancing Script';
+}
+
+h3 {
+    font-family: 'Tangerine';
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Tangerine';
+    font-size: 18px;
+}
+
+legend {
+    color:lightseagreen;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+}
+
+#noparam {
+    width: 50%;
+    text-align: right;
+}
+
+#param {
+    width: 50%;
+    text-align: left;
+}
+
+p {
+    font-size: 12px;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration:none;
+    color: red;
+}
