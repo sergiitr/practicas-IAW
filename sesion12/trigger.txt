@@ -1,0 +1,5 @@
+create trigger BorrarRegistros before delete on clientes
+for each row
+begin
+delete from ventas where codcli=old.codcli;
+end//

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica 9 - Ejercicio 2</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <h1> Practica 9 - Ejercicio 2 </h1>
+        <?php
+            //require_once 'login.php';
+            $db_hostname = "localhost";
+            $db_database = "deportes";
+            $db_username = "root";
+            $db_password = "";
+            $conexion = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
+            $codigo=$_POST['codigo'];
+            $descripcion=$_POST['descripcion'];
+            $tfno=$_POST['tfno'];
+            $web=$_POST['web'];
+            $consulta = "select * from proveedores where codigo='$codigo'";
+            $resultado = mysqli_query ($conexion, $consulta) ;
+            if (!$resultado) 
+                mysqli_error ($consulta);
+            $filas = mysqli_num_rows ($resultado) ;
+            if ($filas>0)
+                echo "<font face=Courier>El proveedor <b>",$codigo," </b> ya existe </font><br>";
+            else {
+                $insertar = "insert into proveedores values ('$codigo', '$descripcion', '$tfno', '$web')";
+                $resultado2 = mysqli_query ($conexion, $insertar);
+                if (!$resultado2)
+                    mysqli_error ($insertar);
+                else
+                    echo "<p>Insertado correctamente</p>";
+            }
+        ?>
+        <p>Ir al segundo ejercicio pulsando <a href="./ejercicio2.php">aqui</a></p>
+    </body>
+</html>
